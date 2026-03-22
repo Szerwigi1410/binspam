@@ -6,3 +6,6 @@ binspam `<height>` `<width>` `<**0** for no spaces between 1s and 0s **1** for s
 
 > EXAMPLE command:
 > ```binspam  50 25 1```
+
+# IOSTEM library is needed for this program
+https://github.com/Szerwigi1410/iostem
