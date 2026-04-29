@@ -2,20 +2,20 @@
 using namespace std;
 
 int main(int argc, char* argv[]) {
-	int opt = 1;
-	int width = 10;
+	long long opt = 1;
+	long long width = 10;
 	bool spaces = false;
 
 	if (argc > 3) {
-		opt = stoi(argv[1]);
-		width = stoi(argv[2]);
-		spaces = stoi(argv[3]) != 0;
+		opt = stoll(argv[1]);
+		width = stoll(argv[2]);
+		spaces = stoll(argv[3]) != 0;
 	}
 
-	for (int i = 0; i < opt; i++) {
+	for (long long i = 0; i < opt; i++) {
 		string bin = "";
-		for (int i = 0; i < width; i++) {
-			int addNum = RANDOM(0, 1);
+		for (long long i = 0; i < width; i++) {
+			long long addNum = RANDOM(0, 1);
 			if (spaces == true) {
 				bin += to_string(addNum) + " ";
 			}
